@@ -1,0 +1,800 @@
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_it.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.NMI_Handler,"ax",%progbits
+  16              		.align	1
+  17              		.global	NMI_Handler
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	NMI_Handler:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/stm32f1xx_it.c"
+   1:../Core/Src/stm32f1xx_it.c **** 
+  27              		.loc 1 73 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 80 1 view .LVU1
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE65:
+  37              		.section	.text.HardFault_Handler,"ax",%progbits
+  38              		.align	1
+  39              		.global	HardFault_Handler
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  43              		.fpu softvfp
+  45              	HardFault_Handler:
+  46              	.LFB66:
+  47              		.loc 1 86 1 view -0
+  48              		.cfi_startproc
+  49              		@ Volatile: function does not return.
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		@ link register save eliminated.
+  53              	.L3:
+  54              		.loc 1 90 2 discriminator 1 view .LVU3
+  55              		.loc 1 94 2 discriminator 1 view .LVU4
+  56              		.loc 1 90 8 discriminator 1 view .LVU5
+  57 0000 FEE7     		b	.L3
+  58              		.cfi_endproc
+  59              	.LFE66:
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 2
+
+
+  61              		.section	.text.MemManage_Handler,"ax",%progbits
+  62              		.align	1
+  63              		.global	MemManage_Handler
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  67              		.fpu softvfp
+  69              	MemManage_Handler:
+  70              	.LFB67:
+  71              		.loc 1 101 1 view -0
+  72              		.cfi_startproc
+  73              		@ Volatile: function does not return.
+  74              		@ args = 0, pretend = 0, frame = 0
+  75              		@ frame_needed = 0, uses_anonymous_args = 0
+  76              		@ link register save eliminated.
+  77              	.L5:
+  78              		.loc 1 105 2 discriminator 1 view .LVU7
+  79              		.loc 1 109 2 discriminator 1 view .LVU8
+  80              		.loc 1 105 8 discriminator 1 view .LVU9
+  81 0000 FEE7     		b	.L5
+  82              		.cfi_endproc
+  83              	.LFE67:
+  85              		.section	.text.BusFault_Handler,"ax",%progbits
+  86              		.align	1
+  87              		.global	BusFault_Handler
+  88              		.syntax unified
+  89              		.thumb
+  90              		.thumb_func
+  91              		.fpu softvfp
+  93              	BusFault_Handler:
+  94              	.LFB68:
+  95              		.loc 1 116 1 view -0
+  96              		.cfi_startproc
+  97              		@ Volatile: function does not return.
+  98              		@ args = 0, pretend = 0, frame = 0
+  99              		@ frame_needed = 0, uses_anonymous_args = 0
+ 100              		@ link register save eliminated.
+ 101              	.L7:
+ 102              		.loc 1 120 2 discriminator 1 view .LVU11
+ 103              		.loc 1 124 2 discriminator 1 view .LVU12
+ 104              		.loc 1 120 8 discriminator 1 view .LVU13
+ 105 0000 FEE7     		b	.L7
+ 106              		.cfi_endproc
+ 107              	.LFE68:
+ 109              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 110              		.align	1
+ 111              		.global	UsageFault_Handler
+ 112              		.syntax unified
+ 113              		.thumb
+ 114              		.thumb_func
+ 115              		.fpu softvfp
+ 117              	UsageFault_Handler:
+ 118              	.LFB69:
+ 119              		.loc 1 131 1 view -0
+ 120              		.cfi_startproc
+ 121              		@ Volatile: function does not return.
+ 122              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 3
+
+
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 125              	.L9:
+ 126              		.loc 1 135 2 discriminator 1 view .LVU15
+ 127              		.loc 1 139 2 discriminator 1 view .LVU16
+ 128              		.loc 1 135 8 discriminator 1 view .LVU17
+ 129 0000 FEE7     		b	.L9
+ 130              		.cfi_endproc
+ 131              	.LFE69:
+ 133              		.section	.text.SVC_Handler,"ax",%progbits
+ 134              		.align	1
+ 135              		.global	SVC_Handler
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.fpu softvfp
+ 141              	SVC_Handler:
+ 142              	.LFB70:
+ 143              		.loc 1 146 1 view -0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147              		@ link register save eliminated.
+ 148              		.loc 1 153 1 view .LVU19
+ 149 0000 7047     		bx	lr
+ 150              		.cfi_endproc
+ 151              	.LFE70:
+ 153              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 154              		.align	1
+ 155              		.global	DebugMon_Handler
+ 156              		.syntax unified
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.fpu softvfp
+ 161              	DebugMon_Handler:
+ 162              	.LFB71:
+ 163              		.loc 1 159 1 view -0
+ 164              		.cfi_startproc
+ 165              		@ args = 0, pretend = 0, frame = 0
+ 166              		@ frame_needed = 0, uses_anonymous_args = 0
+ 167              		@ link register save eliminated.
+ 168              		.loc 1 166 1 view .LVU21
+ 169 0000 7047     		bx	lr
+ 170              		.cfi_endproc
+ 171              	.LFE71:
+ 173              		.section	.text.PendSV_Handler,"ax",%progbits
+ 174              		.align	1
+ 175              		.global	PendSV_Handler
+ 176              		.syntax unified
+ 177              		.thumb
+ 178              		.thumb_func
+ 179              		.fpu softvfp
+ 181              	PendSV_Handler:
+ 182              	.LFB72:
+ 183              		.loc 1 172 1 view -0
+ 184              		.cfi_startproc
+ 185              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 4
+
+
+ 186              		@ frame_needed = 0, uses_anonymous_args = 0
+ 187              		@ link register save eliminated.
+ 188              		.loc 1 179 1 view .LVU23
+ 189 0000 7047     		bx	lr
+ 190              		.cfi_endproc
+ 191              	.LFE72:
+ 193              		.section	.text.SysTick_Handler,"ax",%progbits
+ 194              		.align	1
+ 195              		.global	SysTick_Handler
+ 196              		.syntax unified
+ 197              		.thumb
+ 198              		.thumb_func
+ 199              		.fpu softvfp
+ 201              	SysTick_Handler:
+ 202              	.LFB73:
+ 203              		.loc 1 185 1 view -0
+ 204              		.cfi_startproc
+ 205              		@ args = 0, pretend = 0, frame = 0
+ 206              		@ frame_needed = 0, uses_anonymous_args = 0
+ 207 0000 08B5     		push	{r3, lr}
+ 208              	.LCFI0:
+ 209              		.cfi_def_cfa_offset 8
+ 210              		.cfi_offset 3, -8
+ 211              		.cfi_offset 14, -4
+ 212              		.loc 1 189 2 view .LVU25
+ 213 0002 014B     		ldr	r3, .L15
+ 214 0004 9847     		blx	r3
+ 215              	.LVL0:
+ 216              		.loc 1 193 1 is_stmt 0 view .LVU26
+ 217 0006 08BD     		pop	{r3, pc}
+ 218              	.L16:
+ 219              		.align	2
+ 220              	.L15:
+ 221 0008 00000000 		.word	HAL_IncTick
+ 222              		.cfi_endproc
+ 223              	.LFE73:
+ 225              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
+ 226              		.align	1
+ 227              		.global	TIM1_UP_IRQHandler
+ 228              		.syntax unified
+ 229              		.thumb
+ 230              		.thumb_func
+ 231              		.fpu softvfp
+ 233              	TIM1_UP_IRQHandler:
+ 234              	.LFB74:
+ 235              		.loc 1 206 1 is_stmt 1 view -0
+ 236              		.cfi_startproc
+ 237              		@ args = 0, pretend = 0, frame = 0
+ 238              		@ frame_needed = 0, uses_anonymous_args = 0
+ 239 0000 08B5     		push	{r3, lr}
+ 240              	.LCFI1:
+ 241              		.cfi_def_cfa_offset 8
+ 242              		.cfi_offset 3, -8
+ 243              		.cfi_offset 14, -4
+ 244              		.loc 1 210 2 view .LVU28
+ 245 0002 0248     		ldr	r0, .L19
+ 246 0004 024B     		ldr	r3, .L19+4
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 5
+
+
+ 247 0006 9847     		blx	r3
+ 248              	.LVL1:
+ 249              		.loc 1 214 1 is_stmt 0 view .LVU29
+ 250 0008 08BD     		pop	{r3, pc}
+ 251              	.L20:
+ 252 000a 00BF     		.align	2
+ 253              	.L19:
+ 254 000c 00000000 		.word	htim1
+ 255 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 256              		.cfi_endproc
+ 257              	.LFE74:
+ 259              		.section	.text.TIM1_CC_IRQHandler,"ax",%progbits
+ 260              		.align	1
+ 261              		.global	TIM1_CC_IRQHandler
+ 262              		.syntax unified
+ 263              		.thumb
+ 264              		.thumb_func
+ 265              		.fpu softvfp
+ 267              	TIM1_CC_IRQHandler:
+ 268              	.LFB75:
+ 269              		.loc 1 220 1 is_stmt 1 view -0
+ 270              		.cfi_startproc
+ 271              		@ args = 0, pretend = 0, frame = 0
+ 272              		@ frame_needed = 0, uses_anonymous_args = 0
+ 273 0000 08B5     		push	{r3, lr}
+ 274              	.LCFI2:
+ 275              		.cfi_def_cfa_offset 8
+ 276              		.cfi_offset 3, -8
+ 277              		.cfi_offset 14, -4
+ 278              		.loc 1 224 2 view .LVU31
+ 279 0002 0248     		ldr	r0, .L23
+ 280 0004 024B     		ldr	r3, .L23+4
+ 281 0006 9847     		blx	r3
+ 282              	.LVL2:
+ 283              		.loc 1 228 1 is_stmt 0 view .LVU32
+ 284 0008 08BD     		pop	{r3, pc}
+ 285              	.L24:
+ 286 000a 00BF     		.align	2
+ 287              	.L23:
+ 288 000c 00000000 		.word	htim1
+ 289 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 290              		.cfi_endproc
+ 291              	.LFE75:
+ 293              		.section	.text.TIM3_IRQHandler,"ax",%progbits
+ 294              		.align	1
+ 295              		.global	TIM3_IRQHandler
+ 296              		.syntax unified
+ 297              		.thumb
+ 298              		.thumb_func
+ 299              		.fpu softvfp
+ 301              	TIM3_IRQHandler:
+ 302              	.LFB76:
+ 303              		.loc 1 234 1 is_stmt 1 view -0
+ 304              		.cfi_startproc
+ 305              		@ args = 0, pretend = 0, frame = 0
+ 306              		@ frame_needed = 0, uses_anonymous_args = 0
+ 307 0000 08B5     		push	{r3, lr}
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 6
+
+
+ 308              	.LCFI3:
+ 309              		.cfi_def_cfa_offset 8
+ 310              		.cfi_offset 3, -8
+ 311              		.cfi_offset 14, -4
+ 312              		.loc 1 238 2 view .LVU34
+ 313 0002 0248     		ldr	r0, .L27
+ 314 0004 024B     		ldr	r3, .L27+4
+ 315 0006 9847     		blx	r3
+ 316              	.LVL3:
+ 317              		.loc 1 242 1 is_stmt 0 view .LVU35
+ 318 0008 08BD     		pop	{r3, pc}
+ 319              	.L28:
+ 320 000a 00BF     		.align	2
+ 321              	.L27:
+ 322 000c 00000000 		.word	htim3
+ 323 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 324              		.cfi_endproc
+ 325              	.LFE76:
+ 327              		.section	.text.EXTI15_10_IRQHandler,"ax",%progbits
+ 328              		.align	1
+ 329              		.global	EXTI15_10_IRQHandler
+ 330              		.syntax unified
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.fpu softvfp
+ 335              	EXTI15_10_IRQHandler:
+ 336              	.LFB77:
+ 337              		.loc 1 248 1 is_stmt 1 view -0
+ 338              		.cfi_startproc
+ 339              		@ args = 0, pretend = 0, frame = 0
+ 340              		@ frame_needed = 0, uses_anonymous_args = 0
+ 341 0000 10B5     		push	{r4, lr}
+ 342              	.LCFI4:
+ 343              		.cfi_def_cfa_offset 8
+ 344              		.cfi_offset 4, -8
+ 345              		.cfi_offset 14, -4
+ 346              		.loc 1 252 2 view .LVU37
+ 347 0002 4FF48060 		mov	r0, #1024
+ 348 0006 034C     		ldr	r4, .L31
+ 349 0008 A047     		blx	r4
+ 350              	.LVL4:
+ 351              		.loc 1 253 2 view .LVU38
+ 352 000a 4FF40060 		mov	r0, #2048
+ 353 000e A047     		blx	r4
+ 354              	.LVL5:
+ 355              		.loc 1 257 1 is_stmt 0 view .LVU39
+ 356 0010 10BD     		pop	{r4, pc}
+ 357              	.L32:
+ 358 0012 00BF     		.align	2
+ 359              	.L31:
+ 360 0014 00000000 		.word	HAL_GPIO_EXTI_IRQHandler
+ 361              		.cfi_endproc
+ 362              	.LFE77:
+ 364              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+ 365              		.align	1
+ 366              		.global	HAL_GPIO_EXTI_Callback
+ 367              		.syntax unified
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 7
+
+
+ 368              		.thumb
+ 369              		.thumb_func
+ 370              		.fpu softvfp
+ 372              	HAL_GPIO_EXTI_Callback:
+ 373              	.LVL6:
+ 374              	.LFB78:
+ 375              		.loc 1 270 1 is_stmt 1 view -0
+ 376              		.cfi_startproc
+ 377              		@ args = 0, pretend = 0, frame = 0
+ 378              		@ frame_needed = 0, uses_anonymous_args = 0
+ 379              		.loc 1 270 1 is_stmt 0 view .LVU41
+ 380 0000 10B5     		push	{r4, lr}
+ 381              	.LCFI5:
+ 382              		.cfi_def_cfa_offset 8
+ 383              		.cfi_offset 4, -8
+ 384              		.cfi_offset 14, -4
+ 385 0002 0446     		mov	r4, r0
+ 386              		.loc 1 271 2 is_stmt 1 view .LVU42
+ 387              		.loc 1 271 5 is_stmt 0 view .LVU43
+ 388 0004 B0F5006F 		cmp	r0, #2048
+ 389 0008 03D0     		beq	.L37
+ 390              	.LVL7:
+ 391              	.L34:
+ 392              		.loc 1 279 2 is_stmt 1 view .LVU44
+ 393              		.loc 1 279 5 is_stmt 0 view .LVU45
+ 394 000a B4F5806F 		cmp	r4, #1024
+ 395 000e 0DD0     		beq	.L38
+ 396              	.L33:
+ 397              		.loc 1 287 1 view .LVU46
+ 398 0010 10BD     		pop	{r4, pc}
+ 399              	.LVL8:
+ 400              	.L37:
+ 401              		.loc 1 273 3 is_stmt 1 view .LVU47
+ 402 0012 4FF48051 		mov	r1, #4096
+ 403 0016 2148     		ldr	r0, .L39
+ 404              	.LVL9:
+ 405              		.loc 1 273 3 is_stmt 0 view .LVU48
+ 406 0018 214B     		ldr	r3, .L39+4
+ 407 001a 9847     		blx	r3
+ 408              	.LVL10:
+ 409              		.loc 1 274 3 is_stmt 1 view .LVU49
+ 410              		.loc 1 274 11 is_stmt 0 view .LVU50
+ 411 001c 0023     		movs	r3, #0
+ 412 001e 214A     		ldr	r2, .L39+8
+ 413 0020 1360     		str	r3, [r2]
+ 414              		.loc 1 275 3 is_stmt 1 view .LVU51
+ 415              		.loc 1 275 11 is_stmt 0 view .LVU52
+ 416 0022 214A     		ldr	r2, .L39+12
+ 417 0024 1360     		str	r3, [r2]
+ 418              		.loc 1 276 3 is_stmt 1 view .LVU53
+ 419              		.loc 1 276 10 is_stmt 0 view .LVU54
+ 420 0026 214A     		ldr	r2, .L39+16
+ 421 0028 1360     		str	r3, [r2]
+ 422 002a EEE7     		b	.L34
+ 423              	.L38:
+ 424              		.loc 1 281 3 is_stmt 1 view .LVU55
+ 425              		.loc 1 281 24 is_stmt 0 view .LVU56
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 8
+
+
+ 426 002c 204C     		ldr	r4, .L39+20
+ 427 002e 2168     		ldr	r1, [r4]
+ 428 0030 204B     		ldr	r3, .L39+24
+ 429 0032 A3FB0102 		umull	r0, r2, r3, r1
+ 430 0036 D208     		lsrs	r2, r2, #3
+ 431 0038 02EB8202 		add	r2, r2, r2, lsl #2
+ 432 003c A1EB4202 		sub	r2, r1, r2, lsl #1
+ 433              		.loc 1 281 12 view .LVU57
+ 434 0040 1D49     		ldr	r1, .L39+28
+ 435 0042 CA70     		strb	r2, [r1, #3]
+ 436              		.loc 1 282 3 is_stmt 1 view .LVU58
+ 437              		.loc 1 282 25 is_stmt 0 view .LVU59
+ 438 0044 2068     		ldr	r0, [r4]
+ 439 0046 A3FB0020 		umull	r2, r0, r3, r0
+ 440 004a C008     		lsrs	r0, r0, #3
+ 441              		.loc 1 282 31 view .LVU60
+ 442 004c A3FB00C2 		umull	ip, r2, r3, r0
+ 443 0050 D208     		lsrs	r2, r2, #3
+ 444 0052 02EB8202 		add	r2, r2, r2, lsl #2
+ 445 0056 A0EB4202 		sub	r2, r0, r2, lsl #1
+ 446              		.loc 1 282 12 view .LVU61
+ 447 005a 8A70     		strb	r2, [r1, #2]
+ 448              		.loc 1 283 3 is_stmt 1 view .LVU62
+ 449              		.loc 1 283 25 is_stmt 0 view .LVU63
+ 450 005c 2068     		ldr	r0, [r4]
+ 451 005e 174A     		ldr	r2, .L39+32
+ 452 0060 A2FB0020 		umull	r2, r0, r2, r0
+ 453 0064 4009     		lsrs	r0, r0, #5
+ 454              		.loc 1 283 32 view .LVU64
+ 455 0066 A3FB00C2 		umull	ip, r2, r3, r0
+ 456 006a D208     		lsrs	r2, r2, #3
+ 457 006c 02EB8202 		add	r2, r2, r2, lsl #2
+ 458 0070 A0EB4202 		sub	r2, r0, r2, lsl #1
+ 459              		.loc 1 283 12 view .LVU65
+ 460 0074 4A70     		strb	r2, [r1, #1]
+ 461              		.loc 1 284 3 is_stmt 1 view .LVU66
+ 462              		.loc 1 284 25 is_stmt 0 view .LVU67
+ 463 0076 2268     		ldr	r2, [r4]
+ 464 0078 1148     		ldr	r0, .L39+36
+ 465 007a A0FB0202 		umull	r0, r2, r0, r2
+ 466 007e 9209     		lsrs	r2, r2, #6
+ 467              		.loc 1 284 33 view .LVU68
+ 468 0080 A3FB0203 		umull	r0, r3, r3, r2
+ 469 0084 DB08     		lsrs	r3, r3, #3
+ 470 0086 03EB8303 		add	r3, r3, r3, lsl #2
+ 471 008a A2EB4303 		sub	r3, r2, r3, lsl #1
+ 472              		.loc 1 284 12 view .LVU69
+ 473 008e 0B70     		strb	r3, [r1]
+ 474              		.loc 1 285 3 is_stmt 1 view .LVU70
+ 475              		.loc 1 285 14 is_stmt 0 view .LVU71
+ 476 0090 0C4A     		ldr	r2, .L39+40
+ 477 0092 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 478 0094 83F00103 		eor	r3, r3, #1
+ 479 0098 1370     		strb	r3, [r2]
+ 480              		.loc 1 287 1 view .LVU72
+ 481 009a B9E7     		b	.L33
+ 482              	.L40:
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 9
+
+
+ 483              		.align	2
+ 484              	.L39:
+ 485 009c 000C0140 		.word	1073810432
+ 486 00a0 00000000 		.word	HAL_GPIO_TogglePin
+ 487 00a4 00000000 		.word	counter
+ 488 00a8 00000000 		.word	sekunde
+ 489 00ac 00000000 		.word	minuti
+ 490 00b0 00000000 		.word	.LANCHOR0
+ 491 00b4 CDCCCCCC 		.word	-858993459
+ 492 00b8 00000000 		.word	cifre
+ 493 00bc 1F85EB51 		.word	1374389535
+ 494 00c0 D34D6210 		.word	274877907
+ 495 00c4 00000000 		.word	.LANCHOR1
+ 496              		.cfi_endproc
+ 497              	.LFE78:
+ 499              		.section	.text.HAL_TIM_IC_CaptureCallback,"ax",%progbits
+ 500              		.align	1
+ 501              		.global	HAL_TIM_IC_CaptureCallback
+ 502              		.syntax unified
+ 503              		.thumb
+ 504              		.thumb_func
+ 505              		.fpu softvfp
+ 507              	HAL_TIM_IC_CaptureCallback:
+ 508              	.LVL11:
+ 509              	.LFB79:
+ 510              		.loc 1 300 1 is_stmt 1 view -0
+ 511              		.cfi_startproc
+ 512              		@ args = 0, pretend = 0, frame = 0
+ 513              		@ frame_needed = 0, uses_anonymous_args = 0
+ 514              		@ link register save eliminated.
+ 515              		.loc 1 301 2 view .LVU74
+ 516              		.loc 1 301 16 is_stmt 0 view .LVU75
+ 517 0000 174B     		ldr	r3, .L45
+ 518 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 519              		.loc 1 301 5 view .LVU76
+ 520 0004 53B9     		cbnz	r3, .L42
+ 521              		.loc 1 303 3 is_stmt 1 view .LVU77
+ 522              		.loc 1 303 17 is_stmt 0 view .LVU78
+ 523 0006 174B     		ldr	r3, .L45+4
+ 524 0008 5A6B     		ldr	r2, [r3, #52]
+ 525              		.loc 1 303 11 view .LVU79
+ 526 000a 174B     		ldr	r3, .L45+8
+ 527 000c 1A60     		str	r2, [r3]
+ 528              		.loc 1 304 3 is_stmt 1 view .LVU80
+ 529              		.loc 1 304 17 is_stmt 0 view .LVU81
+ 530 000e 174B     		ldr	r3, .L45+12
+ 531 0010 0022     		movs	r2, #0
+ 532 0012 1A80     		strh	r2, [r3]	@ movhi
+ 533              		.loc 1 305 3 is_stmt 1 view .LVU82
+ 534              		.loc 1 305 13 is_stmt 0 view .LVU83
+ 535 0014 124B     		ldr	r3, .L45
+ 536 0016 0122     		movs	r2, #1
+ 537 0018 1A70     		strb	r2, [r3]
+ 538 001a 7047     		bx	lr
+ 539              	.L42:
+ 540              		.loc 1 307 7 is_stmt 1 view .LVU84
+ 541              		.loc 1 307 21 is_stmt 0 view .LVU85
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 10
+
+
+ 542 001c 104B     		ldr	r3, .L45
+ 543 001e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 544 0020 DBB2     		uxtb	r3, r3
+ 545              		.loc 1 307 10 view .LVU86
+ 546 0022 012B     		cmp	r3, #1
+ 547 0024 00D0     		beq	.L44
+ 548              	.L41:
+ 549              		.loc 1 314 1 view .LVU87
+ 550 0026 7047     		bx	lr
+ 551              	.L44:
+ 552              		.loc 1 309 3 is_stmt 1 view .LVU88
+ 553              		.loc 1 309 17 is_stmt 0 view .LVU89
+ 554 0028 0E4B     		ldr	r3, .L45+4
+ 555 002a 5B6B     		ldr	r3, [r3, #52]
+ 556              		.loc 1 309 11 view .LVU90
+ 557 002c 104A     		ldr	r2, .L45+16
+ 558 002e 1360     		str	r3, [r2]
+ 559              		.loc 1 310 3 is_stmt 1 view .LVU91
+ 560              		.loc 1 310 42 is_stmt 0 view .LVU92
+ 561 0030 0E4B     		ldr	r3, .L45+12
+ 562 0032 1B88     		ldrh	r3, [r3]
+ 563 0034 9BB2     		uxth	r3, r3
+ 564 0036 03EB8301 		add	r1, r3, r3, lsl #2
+ 565 003a C3EB0113 		rsb	r3, r3, r1, lsl #4
+ 566              		.loc 1 310 25 view .LVU93
+ 567 003e 1268     		ldr	r2, [r2]
+ 568 0040 1344     		add	r3, r3, r2
+ 569              		.loc 1 310 49 view .LVU94
+ 570 0042 094A     		ldr	r2, .L45+8
+ 571 0044 1268     		ldr	r2, [r2]
+ 572 0046 9B1A     		subs	r3, r3, r2
+ 573              		.loc 1 310 14 view .LVU95
+ 574 0048 0A4A     		ldr	r2, .L45+20
+ 575 004a 1360     		str	r3, [r2]
+ 576              		.loc 1 311 3 is_stmt 1 view .LVU96
+ 577              		.loc 1 311 15 is_stmt 0 view .LVU97
+ 578 004c 1268     		ldr	r2, [r2]
+ 579 004e 0A4B     		ldr	r3, .L45+24
+ 580 0050 B3FBF2F3 		udiv	r3, r3, r2
+ 581              		.loc 1 311 13 view .LVU98
+ 582 0054 094A     		ldr	r2, .L45+28
+ 583 0056 1360     		str	r3, [r2]
+ 584              		.loc 1 312 3 is_stmt 1 view .LVU99
+ 585              		.loc 1 312 13 is_stmt 0 view .LVU100
+ 586 0058 014B     		ldr	r3, .L45
+ 587 005a 0022     		movs	r2, #0
+ 588 005c 1A70     		strb	r2, [r3]
+ 589              		.loc 1 314 1 view .LVU101
+ 590 005e E2E7     		b	.L41
+ 591              	.L46:
+ 592              		.align	2
+ 593              	.L45:
+ 594 0060 00000000 		.word	.LANCHOR2
+ 595 0064 002C0140 		.word	1073818624
+ 596 0068 00000000 		.word	.LANCHOR3
+ 597 006c 00000000 		.word	.LANCHOR4
+ 598 0070 00000000 		.word	.LANCHOR5
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 11
+
+
+ 599 0074 00000000 		.word	.LANCHOR6
+ 600 0078 00127A00 		.word	8000000
+ 601 007c 00000000 		.word	.LANCHOR0
+ 602              		.cfi_endproc
+ 603              	.LFE79:
+ 605              		.section	.text.HAL_TIM_OC_DelayElapsedCallback,"ax",%progbits
+ 606              		.align	1
+ 607              		.global	HAL_TIM_OC_DelayElapsedCallback
+ 608              		.syntax unified
+ 609              		.thumb
+ 610              		.thumb_func
+ 611              		.fpu softvfp
+ 613              	HAL_TIM_OC_DelayElapsedCallback:
+ 614              	.LVL12:
+ 615              	.LFB80:
+ 616              		.loc 1 318 1 is_stmt 1 view -0
+ 617              		.cfi_startproc
+ 618              		@ args = 0, pretend = 0, frame = 0
+ 619              		@ frame_needed = 0, uses_anonymous_args = 0
+ 620              		@ link register save eliminated.
+ 621              		.loc 1 319 2 view .LVU103
+ 622              		.loc 1 319 13 is_stmt 0 view .LVU104
+ 623 0000 094B     		ldr	r3, .L50
+ 624 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 625              		.loc 1 319 5 view .LVU105
+ 626 0004 5BB9     		cbnz	r3, .L48
+ 627              		.loc 1 321 3 is_stmt 1 view .LVU106
+ 628              		.loc 1 321 7 is_stmt 0 view .LVU107
+ 629 0006 0268     		ldr	r2, [r0]
+ 630              		.loc 1 321 24 view .LVU108
+ 631 0008 42F6DF61 		movw	r1, #11999
+ 632 000c 5163     		str	r1, [r2, #52]
+ 633              	.L49:
+ 634              		.loc 1 327 2 is_stmt 1 view .LVU109
+ 635              		.loc 1 327 6 is_stmt 0 view .LVU110
+ 636 000e 0268     		ldr	r2, [r0]
+ 637              		.loc 1 327 22 view .LVU111
+ 638 0010 0021     		movs	r1, #0
+ 639 0012 5162     		str	r1, [r2, #36]
+ 640              		.loc 1 328 2 is_stmt 1 view .LVU112
+ 641              		.loc 1 328 9 is_stmt 0 view .LVU113
+ 642 0014 83F00103 		eor	r3, r3, #1
+ 643 0018 034A     		ldr	r2, .L50
+ 644 001a 1370     		strb	r3, [r2]
+ 645              		.loc 1 329 1 view .LVU114
+ 646 001c 7047     		bx	lr
+ 647              	.L48:
+ 648              		.loc 1 325 3 is_stmt 1 view .LVU115
+ 649              		.loc 1 325 7 is_stmt 0 view .LVU116
+ 650 001e 0268     		ldr	r2, [r0]
+ 651              		.loc 1 325 24 view .LVU117
+ 652 0020 40F69F71 		movw	r1, #3999
+ 653 0024 5163     		str	r1, [r2, #52]
+ 654 0026 F2E7     		b	.L49
+ 655              	.L51:
+ 656              		.align	2
+ 657              	.L50:
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 12
+
+
+ 658 0028 00000000 		.word	.LANCHOR7
+ 659              		.cfi_endproc
+ 660              	.LFE80:
+ 662              		.global	ON_OFF
+ 663              		.global	gu16_TIM1_OVC
+ 664              		.global	gu32_Ticks
+ 665              		.global	gu32_T2
+ 666              		.global	gu32_T1
+ 667              		.global	gu8_State
+ 668              		.global	prikazFreq
+ 669              		.global	gu32_Freq
+ 670              		.section	.bss.ON_OFF,"aw",%nobits
+ 671              		.set	.LANCHOR7,. + 0
+ 674              	ON_OFF:
+ 675 0000 00       		.space	1
+ 676              		.section	.bss.gu16_TIM1_OVC,"aw",%nobits
+ 677              		.align	1
+ 678              		.set	.LANCHOR4,. + 0
+ 681              	gu16_TIM1_OVC:
+ 682 0000 0000     		.space	2
+ 683              		.section	.bss.gu32_Freq,"aw",%nobits
+ 684              		.align	2
+ 685              		.set	.LANCHOR0,. + 0
+ 688              	gu32_Freq:
+ 689 0000 00000000 		.space	4
+ 690              		.section	.bss.gu32_T1,"aw",%nobits
+ 691              		.align	2
+ 692              		.set	.LANCHOR3,. + 0
+ 695              	gu32_T1:
+ 696 0000 00000000 		.space	4
+ 697              		.section	.bss.gu32_T2,"aw",%nobits
+ 698              		.align	2
+ 699              		.set	.LANCHOR5,. + 0
+ 702              	gu32_T2:
+ 703 0000 00000000 		.space	4
+ 704              		.section	.bss.gu32_Ticks,"aw",%nobits
+ 705              		.align	2
+ 706              		.set	.LANCHOR6,. + 0
+ 709              	gu32_Ticks:
+ 710 0000 00000000 		.space	4
+ 711              		.section	.bss.gu8_State,"aw",%nobits
+ 712              		.set	.LANCHOR2,. + 0
+ 715              	gu8_State:
+ 716 0000 00       		.space	1
+ 717              		.section	.bss.prikazFreq,"aw",%nobits
+ 718              		.set	.LANCHOR1,. + 0
+ 721              	prikazFreq:
+ 722 0000 00       		.space	1
+ 723              		.text
+ 724              	.Letext0:
+ 725              		.file 2 "../c:\\users\\marko micovic\\desktop\\gnu mcu new\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 726              		.file 3 "../c:\\users\\marko micovic\\desktop\\gnu mcu new\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 727              		.file 4 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 728              		.file 5 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 729              		.file 6 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 730              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 731              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 13
+
+
+ 732              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_it.c
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:38     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:62     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:86     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:110    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:134    .text.SVC_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:141    .text.SVC_Handler:0000000000000000 SVC_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:154    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:161    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:174    .text.PendSV_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:181    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:194    .text.SysTick_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:201    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:221    .text.SysTick_Handler:0000000000000008 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:226    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:233    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:254    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:260    .text.TIM1_CC_IRQHandler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:267    .text.TIM1_CC_IRQHandler:0000000000000000 TIM1_CC_IRQHandler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:288    .text.TIM1_CC_IRQHandler:000000000000000c $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:294    .text.TIM3_IRQHandler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:301    .text.TIM3_IRQHandler:0000000000000000 TIM3_IRQHandler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:322    .text.TIM3_IRQHandler:000000000000000c $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:328    .text.EXTI15_10_IRQHandler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:335    .text.EXTI15_10_IRQHandler:0000000000000000 EXTI15_10_IRQHandler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:360    .text.EXTI15_10_IRQHandler:0000000000000014 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:365    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:372    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:485    .text.HAL_GPIO_EXTI_Callback:000000000000009c $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:500    .text.HAL_TIM_IC_CaptureCallback:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:507    .text.HAL_TIM_IC_CaptureCallback:0000000000000000 HAL_TIM_IC_CaptureCallback
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:594    .text.HAL_TIM_IC_CaptureCallback:0000000000000060 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:606    .text.HAL_TIM_OC_DelayElapsedCallback:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:613    .text.HAL_TIM_OC_DelayElapsedCallback:0000000000000000 HAL_TIM_OC_DelayElapsedCallback
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:658    .text.HAL_TIM_OC_DelayElapsedCallback:0000000000000028 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:674    .bss.ON_OFF:0000000000000000 ON_OFF
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:681    .bss.gu16_TIM1_OVC:0000000000000000 gu16_TIM1_OVC
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:709    .bss.gu32_Ticks:0000000000000000 gu32_Ticks
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:702    .bss.gu32_T2:0000000000000000 gu32_T2
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:695    .bss.gu32_T1:0000000000000000 gu32_T1
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:715    .bss.gu8_State:0000000000000000 gu8_State
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:721    .bss.prikazFreq:0000000000000000 prikazFreq
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:688    .bss.gu32_Freq:0000000000000000 gu32_Freq
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:675    .bss.ON_OFF:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:677    .bss.gu16_TIM1_OVC:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:684    .bss.gu32_Freq:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:691    .bss.gu32_T1:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:698    .bss.gu32_T2:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:705    .bss.gu32_Ticks:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:716    .bss.gu8_State:0000000000000000 $d
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s 			page 15
+
+
+C:\Users\MARKOM~1\AppData\Local\Temp\ccBwLYwe.s:722    .bss.prikazFreq:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_IncTick
+htim1
+HAL_TIM_IRQHandler
+htim3
+HAL_GPIO_EXTI_IRQHandler
+HAL_GPIO_TogglePin
+counter
+sekunde
+minuti
+cifre
